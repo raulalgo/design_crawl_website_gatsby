@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Panel>
       <Presentacion />
     </Panel>
-    <Panel primary>
+    <Panel negative>
       <Reparto />
     </Panel>
     <Panel>

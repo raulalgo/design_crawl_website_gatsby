@@ -32,8 +32,8 @@ const TemplateWrapper = ({ children }) => (
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
-      <Panel primary>
-        <Header primary />
+      <Panel >
+        <Header />
       </Panel>
       <div>
         {children()}
