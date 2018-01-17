@@ -5,13 +5,18 @@ import styled       from  'styled-components';
 
 /* Styled Components */
 const Grid = styled.section`
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "c m";
+    
 
-    section.presentacion {
-        grid-area: c;
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "c m";
+        
+        section.presentacion {
+            grid-area: c;
+        }
     }
+
 `;
 
 class Presentacion extends React.Component {

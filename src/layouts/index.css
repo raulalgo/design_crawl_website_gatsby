@@ -1,4 +1,18 @@
-html {
+@import url('https://rsms.me/inter/inter-ui.css');
+
+body {
+  font-family: 'Inter UI', 'SF UI', Helvetica, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+}
+
+@media(min-width: 800px) {
+  h2{
+    font-size: 2.4em;
+  }
+}
+/* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -621,4 +635,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */
