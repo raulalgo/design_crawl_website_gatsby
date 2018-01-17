@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components';
 import {ThemeProvider} from 'styled-components';
 
-import Header from '../components/Header';
+import Header from '../components/Header/HeaderAlt';
 import Panel from '../components/Panel';
 import './index.css'
 
@@ -32,9 +32,7 @@ const TemplateWrapper = ({ children }) => (
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
-      <Panel >
-        <Header />
-      </Panel>
+      <Header />
       <div>
         {children()}
       </div>
