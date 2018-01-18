@@ -8,33 +8,21 @@ import Avatar       from    './Avatar';
 
 /* Styled Components */
 const Person = styled.section`
-    display: grid;
-    grid-template-columns: 72px 1fr;
-    grid-template-rows: 72px;
-    grid-gap: 12px;
-    grid-template-areas: "a i";
-
-    margin-bottom: 24px;
-
-    @media(min-width: 800px) {
-        grid-gap: 24px;
-    }
+    padding: 36px
 `;
 
 const Informacion = styled.section`
     padding-top: 4px;
     grid-area: i;
-    align-self: center;
+    text-align: center;
+
+    margin: 36px 0;
 `;
 
 const Nombre = styled.h3`
     margin: 0 0 8px 0;
-    font-size: 1.6em;
+    font-size: 1.8em;
 
-    @media(min-width: 800px) {
-        display: inline-block;
-        font-size: 2.4em;
-    }
 `;
 const Trabajo = styled.span`
     text-transform: uppercase;
@@ -51,9 +39,9 @@ class Invitado extends React.Component {
     render(){
         return (
             <Person negative={this.props.negative}>
-                <Avatar negative={this.props.negative} />
+                <Avatar size={96} negative={this.props.negative} />
                 <Informacion>
-                    <Nombre>{this.props.nombre},</Nombre> 
+                    <Nombre>{this.props.nombre}</Nombre> 
                     <Trabajo> {this.props.cargo} en {this.props.empresa}</Trabajo>
                 </Informacion>
                 <p>{this.props.text}</p>

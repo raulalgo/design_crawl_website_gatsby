@@ -37,9 +37,6 @@ class Main extends React.Component {
                     <Panel primary>
                         <Header primary/>
                     </Panel>
-                    <Panel>
-                        <Presentacion /> 
-                    </Panel>
                     <Panel primary>
                         <Reparto />
                     </Panel>

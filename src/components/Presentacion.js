@@ -4,17 +4,20 @@ import React        from  'react';
 import styled       from  'styled-components';
 
 /* Styled Components */
+
 const Grid = styled.section`
-    
 
     @media (min-width: 800px) {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-template-areas: "c m";
         
-        section.presentacion {
+        /* section.presentacion {
             grid-area: c;
-        }
+
+            font-size: 4em;
+            color: red;
+        } */
     }
 
 `;
@@ -22,13 +25,12 @@ const Grid = styled.section`
 class Presentacion extends React.Component {
     constructor(props) {
         super(props);
-
         
     }
 
     render(){
+        console.log(this.props.className)
         return (
-            <Grid>
                 <section className="presentacion">
                     <p>El próximo 24 de marzo, en Londres, queremos pegarnos un gran atracón de diseño en el primer gran Design Crawl que organizaremos entre los alumnos del Máster en Diseño Gráfico y de Interfaz, antiguos alumnos y todos los profesionales del sector que nos quieran acompañar.</p>
                     <p>El programa es sencillo y se realiza en tres actos.</p>
@@ -38,7 +40,6 @@ class Presentacion extends React.Component {
                         <li><b>Noche:</b>Acabaremos en el pub para lo que el cuerpo aguante.</li>
                     </ul>
                 </section>
-            </Grid>
         );
     }
 

@@ -3,19 +3,23 @@
 import React        from  'react';
 import styled       from  'styled-components';
 
+import Presentacion from    '../Presentacion';
 /* Styled Components */
 const Grid = styled.section`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title info";
+    @media(min-width: 1000px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "title info";
+    }
+
 `;
 
 const TitleWrap = styled.section`
     grid-area: title;
 
     display: grid;
-    grid-template-columns: 4em ; 4em;
-    grid-template-rows: 8em 1fr 8em;
+    grid-template-columns: 1fr 450px 1fr;
+    grid-template-rows: 12em 1fr 12em;
     grid-template-areas: "mt mt mt"
                          "ml ct mr"
                          "mb mb mb";
@@ -23,10 +27,37 @@ const TitleWrap = styled.section`
 
     background-color: ${props => props.theme.black};
     color: ${props => props.theme.white};
+
+    min-height: 100vh;
+
+`;
+
+const PresentWrap = styled.section`
+    display: grid;
+    
+
+    section.presentacion{
+        max-width: 450px;
+
+        font-size: 1.2em;
+        line-height: 1.4em;
+
+        align-self: center;
+        justify-self: center;
+
+        ul{
+            padding-top: 0.4em;
+
+            li {
+                margin-bottom: 0.6em;
+            }
+        }
+    }
 `;
 
 const MarginArea = styled.section`
     grid-area: ct;
+    align-self: center;
 `;
 
 const Title = styled.h1`
@@ -74,6 +105,9 @@ class Header extends React.Component {
                         <Subt>Londres, 24 de marzo de 2018</Subt>
                     </MarginArea>
                 </TitleWrap>
+                <PresentWrap>
+                    <Presentacion />
+                </PresentWrap>
             </Grid>
         );
     }
