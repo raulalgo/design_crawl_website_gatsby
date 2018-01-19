@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components';
 import {ThemeProvider} from 'styled-components';
 
-import Header from '../components/Header/HeaderAlt';
+import Header from '../components/Header/HeaderAltB';
 import Panel from '../components/Panel';
 import './index.css'
 
@@ -29,7 +29,7 @@ const TemplateWrapper = ({ children }) => (
         title="the design crawl"
         meta={[
           { name: 'description', content: 'El primer design crawl, organizado en Londres para alumnos, exalumnos y amigos del master de diseño gráfico y de interfaz de la Universidad Pontificia de Salamanca' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'keywords', content: 'diseño, Londres, pantallas, ux, interfaz, evento' },
         ]}
       />
       <Header />
