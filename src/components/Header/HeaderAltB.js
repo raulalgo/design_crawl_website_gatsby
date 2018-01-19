@@ -51,14 +51,14 @@ const TitleWrap = styled.section`
     /* grid-row: 1/2;
     grid-column: 1/2; */
     grid-area: title;
-    z-index: 1;
+    z-index: 2;
 
     justify-self: center;
     align-self: center;
 
     /* padding: 24px; */
 
-    background-color: ${props => props.theme.black};
+    /*background-color: ${props => props.theme.black};*/
     color: ${props => props.theme.white};
     /* height: 50vh; */
     display: grid;
@@ -79,6 +79,15 @@ const TitleWrap = styled.section`
         min-height: 100vh; */
     }
 
+`;
+
+const TitleBg = styled.section`
+    @media(min-width: 800px) {
+        background-color: red;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        z-index: 1;
+    }
 `;
 
 const PresentWrap = styled.section`
@@ -188,6 +197,7 @@ class Header extends React.Component {
                         <Subt>Londres, 24 de marzo de 2018</Subt>
                     </MarginArea>
                 </TitleWrap>
+                <TitleBg />
                 <PresentWrap>
                     <Presentacion />
                 </PresentWrap>
