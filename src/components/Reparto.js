@@ -7,6 +7,7 @@ import Invitado     from    './InvitadoVert';
 /* Styled Components */
 const CenterWrap = styled.section`
     margin: 0 auto;
+    padding: 24px;
     @media(min-width: 1000px) {
         max-width: 900px;
     }

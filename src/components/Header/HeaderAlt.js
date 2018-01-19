@@ -6,6 +6,8 @@ import styled       from  'styled-components';
 import Presentacion from    '../Presentacion';
 /* Styled Components */
 const Grid = styled.section`
+    min-height: 100vh;
+
     @media(min-width: 1000px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -15,7 +17,17 @@ const Grid = styled.section`
 `;
 
 const TitleWrap = styled.section`
-    grid-area: title;
+    /* padding: 8em 4em; */
+
+    background-color: ${props => props.theme.black};
+    color: ${props => props.theme.white};
+    height: 50vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+   @media(min-width: 800px){ grid-area: title;
 
     display: grid;
     grid-template-columns: 1fr 450px 1fr;
@@ -23,41 +35,52 @@ const TitleWrap = styled.section`
     grid-template-areas: "mt mt mt"
                          "ml ct mr"
                          "mb mb mb";
-    /* padding: 8em 4em; */
 
-    background-color: ${props => props.theme.black};
-    color: ${props => props.theme.white};
-
-    min-height: 100vh;
+    min-height: 100vh;}
 
 `;
 
 const PresentWrap = styled.section`
+    min-height: 50vh;
     display: grid;
-    
 
-    section.presentacion{
-        max-width: 450px;
-
-        font-size: 1.2em;
-        line-height: 1.4em;
-
+    section.presentacion {
+        padding: 24px;
         align-self: center;
         justify-self: center;
+    }
 
-        ul{
-            padding-top: 0.4em;
+    @media(min-width: 800px) {
+        display: grid;
 
-            li {
-                margin-bottom: 0.6em;
+        section.presentacion{
+            max-width: 450px;
+
+            font-size: 1.2em;
+            line-height: 1.4em;
+
+            align-self: center;
+            justify-self: center;
+
+            ul{
+                padding-top: 0.4em;
+
+                li {
+                    margin-bottom: 0.6em;
+                }
             }
         }
     }
 `;
 
 const MarginArea = styled.section`
-    grid-area: ct;
     align-self: center;
+    justify-self: center;
+    max-width: 240px;
+    @media (min-width: 800px) {
+        grid-area: ct;
+        align-self: center;
+    }
 `;
 
 const Title = styled.h1`
@@ -82,9 +105,15 @@ const Subt = styled.h2`
 `;
 
 const Divider = styled.div`
-    height: 12px;
-    margin: 2em 16em;
     background-color: ${props => props.theme.white};
+    height: 8px;
+    max-width: 120px;
+
+    margin: 2em auto;
+
+    @media (min-width: 800px) {
+        margin: 2em 16em;
+    }
 `;
     
 
