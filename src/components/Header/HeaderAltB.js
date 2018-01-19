@@ -20,12 +20,15 @@ const Grid = styled.section`
 `;
 
 const NewGrid = styled.section`
+    color: ${props => props.theme.dark};
     display: grid;
     min-height: 150vh;
-    grid-template-rows: 100vh 1fr;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-areas: "title"
-                         "info";
+    grid-template-rows: 25vh 50vh 25vh 1fr;
+    grid-template-columns: 1fr 300px 1fr; 
+    grid-template-areas: "mt mt mt"
+                         "ml title mr"
+                         "mb mb mb"
+                         "info info info";
 
     @media(min-width: 800px) {
         min-height: 100vh;
@@ -47,46 +50,43 @@ const Base = styled.section`
 
 
 const TitleWrap = styled.section`
-    /* padding: 8em 4em; */
-    /* grid-row: 1/2;
-    grid-column: 1/2; */
     grid-area: title;
     z-index: 2;
 
     justify-self: center;
     align-self: center;
 
-    /* padding: 24px; */
 
-    /*background-color: ${props => props.theme.black};*/
     color: ${props => props.theme.white};
-    /* height: 50vh; */
     display: grid;
-    opacity: 0.6;
 
    @media(min-width: 800px){
+       background-color: none;
         justify-self: stretch;
         align-self: stretch;
-       
-        /* grid-area: title;
-
-        display: grid;
-        grid-template-columns: 1fr 450px 1fr;
-        grid-template-rows: 12em 1fr 12em;
-        grid-template-areas: "mt mt mt"
-                             "ml ct mr"
-                             "mb mb mb";
-        min-height: 100vh; */
     }
 
 `;
 
 const TitleBg = styled.section`
+    background-color: ${props => props.theme.dark};
+    grid-row: 2/3;
+    grid-column: 2/3;
+    z-index: 1;
+    opacity: 0.6;
+
     @media(min-width: 800px) {
-        background-color: red;
+    }
+`;
+
+const PresentBg = styled.section`
+    @media(min-width: 800px) {
+        background-color: yellow;
         grid-row: 2/3;
-        grid-column: 2/3;
+        grid-column: 3/4;
         z-index: 1;
+        background-color: ${props => props.theme.white};
+        opacity: 0.8;
     }
 `;
 
@@ -94,8 +94,7 @@ const PresentWrap = styled.section`
     min-height: 50vh;
     display: grid;
     grid-area: info;
-    z-index: 1;
-    background-color: ${props => props.theme.white};
+    z-index: 2;
     justify-self: center;
     align-self: center;
     opacity: 0.8;
@@ -153,6 +152,8 @@ const Title = styled.h1`
     
     text-align: center;
 
+    color: ${props => props.theme.accent};
+
     @media (min-width: 800px) {
         font-size: 6em;
         line-height: 1em;
@@ -170,7 +171,7 @@ const Subt = styled.h2`
 `;
 
 const Divider = styled.div`
-    background-color: ${props => props.theme.white};
+    background-color: ${props => props.theme.accent};
     height: 8px;
     max-width: 120px;
 
@@ -201,6 +202,7 @@ class Header extends React.Component {
                 <PresentWrap>
                     <Presentacion />
                 </PresentWrap>
+                <PresentBg />
                 <Background></Background> 
             </NewGrid>       
         );

@@ -20,10 +20,12 @@ const GridPresent = styled.section`
     }
 
 `;
-
+const Principal = styled.section`
+  color: ${props => props.theme.dark};
+`;
 
 const IndexPage = () => (
-  <div>
+  <Principal className="sectionPrincipal">
     {/* <Panel>
       <GridPresent>
         <Presentacion />
@@ -37,7 +39,7 @@ const IndexPage = () => (
     <Panel negative>
       <Footer />
     </Panel>
-  </div>
+  </Principal>
 )
 
 export default IndexPage

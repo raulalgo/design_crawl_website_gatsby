@@ -13,10 +13,15 @@ const white = '#FFFFFF';
 const black = '#000000';
 const blue = '#2A9DD6';
 const yellow = '#FFD658';
+const darkBlue = '#090831';
+const reddish = '#ff4263';
+const reddish2 = '#f44848';
 
 const theme = {
     white: white,
     black: black,
+    dark: darkBlue,
+    accent: reddish2,
     primary: blue,
     secondary: yellow
 };

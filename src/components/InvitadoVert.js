@@ -22,7 +22,7 @@ const Informacion = styled.section`
 const Nombre = styled.h3`
     margin: 0 0 8px 0;
     font-size: 1.8em;
-
+    color: ${props => props.theme.accent};
 `;
 const Trabajo = styled.span`
     text-transform: uppercase;

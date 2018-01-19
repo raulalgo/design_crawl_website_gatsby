@@ -16,8 +16,8 @@ const Foto = styled.section`
     background-size: cover;
     justify-self: stretch;
     align-self: stretch;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column: 1/4;
+    grid-row: 1/4;
     z-index: 0;
 
     @media (min-width: 800px) {

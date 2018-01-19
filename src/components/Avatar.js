@@ -5,7 +5,7 @@ import styled       from  'styled-components';
 
 /* Styled Components */
 const Circle = styled.section`
-    background-color: ${props => props.negative ? props.theme.white : props.theme.black};
+    background-color: ${props => props.negative ? props.theme.white : props.theme.dark};
     border-radius: 100%;
     width: ${props => props.size }px;
     height: ${props => props.size }px;
