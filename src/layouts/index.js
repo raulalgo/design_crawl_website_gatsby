@@ -26,9 +26,9 @@ const TemplateWrapper = ({ children }) => (
   <ThemeProvider theme={theme}>
     <div>
       <Helmet
-        title="Gatsby Default Starter"
+        title="the design crawl"
         meta={[
-          { name: 'description', content: 'Sample' },
+          { name: 'description', content: 'El primer design crawl, organizado en Londres para alumnos, exalumnos y amigos del master de diseño gráfico y de interfaz de la Universidad Pontificia de Salamanca' },
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
