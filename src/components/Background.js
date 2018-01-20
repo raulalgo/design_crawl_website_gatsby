@@ -3,13 +3,14 @@
 import React        from  'react';
 import styled       from  'styled-components';
 
-import background   from    './img/bg_1.jpg';
+import background   from    './bg_1.jpg';
 
 /* Styled Components */
 
 const Foto = styled.section`
     /* background-color: green; */
     background: url(${background}) no-repeat center center;
+    /*background-image: url(${background});*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
