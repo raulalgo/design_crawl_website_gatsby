@@ -5,6 +5,7 @@ import styled       from  'styled-components';
 
 import Presentacion from    '../Presentacion';
 import Background   from    '../Background';
+import MasterSimbolo from '../MasterSimbolo';
 /* Styled Components */
 const Grid = styled.section`
     min-height: 100vh;
@@ -135,8 +136,8 @@ const MarginArea = styled.section`
     align-self: center;
     justify-self: center;
     max-width: 240px;
-    padding: 120px 24px;
-
+    /* padding: 120px 24px; */
+    display: grid;
     @media (min-width: 800px) {
         align-self: center;
         max-width: 480px;
@@ -173,8 +174,9 @@ const Subt = styled.h2`
 const Divider = styled.div`
     background-color: ${props => props.theme.accent};
     height: 8px;
+    width: 60%;
     max-width: 120px;
-
+    /* align-self: center; */
     margin: 2em auto;
 
     @media (min-width: 800px) {
@@ -196,6 +198,7 @@ class Header extends React.Component {
                         <Title>the design crawl</Title>
                         <Divider />
                         <Subt>Londres, 24 de marzo de 2018</Subt>
+                        <MasterSimbolo width={50} />
                     </MarginArea>
                 </TitleWrap>
                 <TitleBg />
