@@ -43,7 +43,7 @@ class Reparto extends React.Component {
             <CenterWrap>
                 <h2>El reparto</h2>
                 <p>Vendrán a darnos tema de conversación para el resto del día: </p>
-                <InvitadosVert className>
+                <InvitadosVert >
                     <Invitado negative={this.props.negative}
                               avatar=""
                               nombre="Hugo Cornejo"
@@ -57,7 +57,7 @@ class Reparto extends React.Component {
                               cargo="UX Designer"
                               empresa="Designit" 
                               link=""
-                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
                               avatar=""
                               nombre="Inaiyali de León"
@@ -77,7 +77,7 @@ class Reparto extends React.Component {
                               cargo="Head of Design"
                               empresa="El Parking" 
                               link=""
-                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
                               avatar=""
                               nombre="Raúl Álvarez"

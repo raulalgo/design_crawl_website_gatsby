@@ -8,7 +8,21 @@ import Avatar       from    './Avatar';
 
 /* Styled Components */
 const Person = styled.section`
-    padding: 36px
+    padding: 36px;
+
+    transition: all ${props => props.theme.transitionTime} ease-out;
+
+    &:hover {
+        background-color: ${props => props.theme.accent};
+        transition: all ${props => props.theme.transitionTime} ease-in;
+        box-shadow: 0px 4px 10px ${props => props.theme.shadow};
+        cursor: pointer;
+
+        h3 {
+            color: ${props => props.theme.white};
+            transition: all ${props => props.theme.transitionTime} ease-in;
+        }
+    }
 `;
 
 const Informacion = styled.section`
