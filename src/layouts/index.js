@@ -16,12 +16,14 @@ const yellow = '#FFD658';
 const darkBlue = '#090831';
 const reddish = '#ff4263';
 const reddish2 = '#f44848';
+const reddishDark = '#9f1f15';
+const verdeAeight = '#031e0d';
 
 const theme = {
     white: white,
     black: black,
-    dark: darkBlue,
-    accent: reddish2,
+    dark: verdeAeight,
+    accent: reddishDark,
     primary: blue,
     secondary: yellow
 };

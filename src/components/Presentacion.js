@@ -37,7 +37,7 @@ class Presentacion extends React.Component {
                     <ul>
                         <li><b>Mañana:</b> 6 charlas 6, en las oficinas de Designit en Londres, a partir de las 11 de la mañana</li>
                         <li><b>Tarde:</b> Visita al museo del diseño</li>
-                        <li><b>Noche:</b>Acabaremos en el pub para lo que el cuerpo aguante.</li>
+                        <li><b>Noche:</b> Fin de fiesta en un pub Londinense.</li>
                     </ul>
                 </section>
         );

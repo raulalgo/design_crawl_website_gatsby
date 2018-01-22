@@ -3,6 +3,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import logoMasterPng from './logo_master.png';
+
 const Pie = styled.footer`
   padding: 48px 0
 `;
@@ -22,6 +24,11 @@ const Grid = styled.section`
 
 `;
 
+const Master = styled.section`
+  background-image: url(${logoMasterPng});
+  min-height: 400px;
+`;
+
 class Footer extends React.Component{
 
   constructor(props) {
@@ -34,6 +41,7 @@ class Footer extends React.Component{
         <Grid>
             <section className="organiza">
                 <h4>Organiza</h4>
+                <Master />
                 <div>Master de diseño grafico y de interfaz</div>
             </section>
             <section className="patrocina right">
