@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import logoMasterPng from './logo_master.png';
+import DesignitLogo from  './DesignitLogo';
 
 const Pie = styled.footer`
   padding: 48px 0
@@ -44,7 +45,7 @@ class Footer extends React.Component{
             </section>
             <section className="patrocina right">
                 <h4>Colabora</h4>
-                <div>DesignIt</div>
+                <DesignitLogo/>
             </section>
         </Grid>
     </Pie>
