@@ -17,13 +17,15 @@ const darkBlue = '#090831';
 const reddish = '#ff4263';
 const reddish2 = '#f44848';
 const reddishDark = '#9f1f15';
+const golden = '#b18f19';
+const golden2 = '#d7b146';
 const verdeAeight = '#031e0d';
 
 const theme = {
     white: white,
     black: black,
     dark: verdeAeight,
-    accent: reddishDark,
+    accent: golden2,
     primary: blue,
     secondary: yellow
 };

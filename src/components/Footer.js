@@ -25,8 +25,6 @@ const Grid = styled.section`
 `;
 
 const Master = styled.section`
-  background-image: url(${logoMasterPng});
-  min-height: 400px;
 `;
 
 class Footer extends React.Component{
@@ -41,8 +39,8 @@ class Footer extends React.Component{
         <Grid>
             <section className="organiza">
                 <h4>Organiza</h4>
-                <Master />
-                <div>Master de diseño grafico y de interfaz</div>
+                <img src={logoMasterPng} width="350"/>
+                {/* <div>Master de diseño grafico y de interfaz</div> */}
             </section>
             <section className="patrocina right">
                 <h4>Colabora</h4>
