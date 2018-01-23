@@ -6,6 +6,7 @@ import Panel from '../components/Panel';
 import Presentacion from '../components/Presentacion';
 import Reparto from '../components/Reparto';
 import Footer from '../components/Footer';
+import Boton from '../components/Boton';
 
 const GridPresent = styled.section`
 
@@ -33,8 +34,9 @@ const IndexPage = () => (
     </Panel> */}
     <Reparto  />
     <Panel>
-      <h2>Ya está, tampoco hay mucho más que explicar</h2>
-      <p>Si te apetece acompañarnos, te esperamos con los brazos abiertos. Y si tienes algo que decirnos, nos puedes escribir por twitter, facebook o directamente email.</p>
+      <h2>¿Nos quieres acompañar?</h2>
+      <p>Andamos un poco justos de espacio, pero alguien más seguro que cabe. Escríbenos y te contamos.</p>
+      <Boton>Quiero participar</Boton>
     </Panel>
     <Panel negative>
       <Footer />

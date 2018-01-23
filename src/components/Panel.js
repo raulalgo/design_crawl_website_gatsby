@@ -25,6 +25,8 @@ const Content = styled.section`
     grid-area: c;
 
     padding: 48px 0;
+
+    display: grid;
 `;
 
 class Panel extends React.Component {

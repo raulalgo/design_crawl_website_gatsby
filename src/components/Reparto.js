@@ -103,7 +103,7 @@ class Reparto extends React.Component {
                               link=""
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                 </InvitadosHoriz>
-                <InvitadosVert >
+                {/* <InvitadosVert >
                     <InvitadoV negative={this.props.negative}
                               avatar=""
                               nombre="Hugo Cornejo"
@@ -145,7 +145,7 @@ class Reparto extends React.Component {
                               empresa="Cluster Seven" 
                               link=""
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
-                </InvitadosVert>
+                </InvitadosVert> */}
                 
             </CenterWrap>
         );

@@ -21,6 +21,8 @@ const golden = '#b18f19';
 const golden2 = '#d7b146';
 const verdeAeight = '#031e0d';
 const verdeAeightRGB100 = 'rgba(3,30,10,1)';
+const verdeAeightRGB60 = 'rgba(3,30,10,0.6)';
+const verdeAeightRGB40 = 'rgba(3,30,10,0.4)';
 const verdeAeightRGB20 = 'rgba(3,30,10,0.2)';
 
 const theme = {
@@ -28,6 +30,7 @@ const theme = {
     black: black,
     dark: verdeAeightRGB100,
     shadow: verdeAeightRGB20,
+    shadowHigher: verdeAeightRGB20,
     accent: golden2,
     primary: blue,
     secondary: yellow,
