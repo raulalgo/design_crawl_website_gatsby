@@ -24,6 +24,15 @@ const GridPresent = styled.section`
 const Principal = styled.section`
   color: ${props => props.theme.dark};
 `;
+const Centrado = styled.section`
+    margin: 0 auto;
+    padding: 24px;
+    @media(min-width: 1000px) {
+        max-width: 900px;
+    }
+
+    display: grid;
+`;
 
 const IndexPage = () => (
   <Principal className="sectionPrincipal">
@@ -33,11 +42,11 @@ const IndexPage = () => (
       </GridPresent>
     </Panel> */}
     <Reparto  />
-    <Panel>
+    <Centrado>
       <h2>¿Nos quieres acompañar?</h2>
       <p>Andamos un poco justos de espacio, pero alguien más seguro que cabe. Escríbenos y te contamos.</p>
       <Boton>Quiero participar</Boton>
-    </Panel>
+    </Centrado>
     <Panel negative>
       <Footer />
     </Panel>

@@ -5,7 +5,12 @@ import styled       from  'styled-components';
 import Invitado     from    './Invitado';
 import InvitadoV    from    './InvitadoVert';
 
-import JorgeAvatar from './jalv.jpg';
+import HugoAvatar   from    './img/hugoc.png';
+import JorgeAvatar from './img/jalv.jpg';
+import PabloAvatar  from './img/pablom.png';
+import RaulAvatar   from    './img/raula.png';
+import SaraAvatar   from    './img/sarar.png';
+import YolandaAvatar from   './img/yolandam.png';
 
 /* Styled Components */
 const CenterWrap = styled.section`
@@ -62,18 +67,25 @@ class Reparto extends React.Component {
                 <p>Vendrán a darnos tema de conversación para el resto del día: </p>
                 <InvitadosHoriz >
                     <Invitado negative={this.props.negative}
-                              avatar=""
+                              avatar={HugoAvatar}
                               nombre="Hugo Cornejo"
                               cargo="Head of Design"
                               empresa="Monzo" 
-                              link=""
+                              link="https://www.linkedin.com/in/hugocornejo/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
                               avatar={JorgeAvatar}
                               nombre="Jorge Álvarez"
-                              cargo="UX Designer"
+                              cargo="Associate Director"
                               empresa="Designit" 
-                              link=""
+                              link="https://www.linkedin.com/in/jalvapic/"
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                    <Invitado negative={this.props.negative}
+                              avatar={PabloAvatar}
+                              nombre="Pablo Maroñas"
+                              cargo="Lead Designer"
+                              empresa="Designit" 
+                              link="https://www.linkedin.com/in/pablomaronas/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
                               avatar=""
@@ -82,25 +94,25 @@ class Reparto extends React.Component {
                               link=""
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
-                              avatar=""
-                              nombre="Yuan Chen"
-                              cargo="UX Designer"
+                              avatar={YolandaAvatar}
+                              nombre="Yolanda Martín"
+                              cargo="Head of Produt Design - Backoffice and Platform"
                               empresa="Farfetch" 
-                              link=""
+                              link="https://www.linkedin.com/in/yolandamartin/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                    <Invitado negative={this.props.negative}
-                              avatar=""
+                              avatar={SaraAvatar}
                               nombre="Sara Rivera"
                               cargo="Head of Design"
                               empresa="El Parking" 
-                              link=""
+                              link="https://www.linkedin.com/in/sara-rivera-jurado-26633466/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
-                              avatar=""
+                              avatar={RaulAvatar}
                               nombre="Raúl Álvarez"
                               cargo="Lead UX"
                               empresa="Cluster Seven" 
-                              link=""
+                              link="https://www.linkedin.com/in/raulalvarezgonzalez/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                 </InvitadosHoriz>
                 {/* <InvitadosVert >

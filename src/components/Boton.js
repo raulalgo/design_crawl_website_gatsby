@@ -7,7 +7,7 @@ import styled       from  'styled-components';
 const BotonArea = styled.a`
     padding: 24px;
     background-color: ${props => props.theme.accent};
-    color: ${props => props.theme.dark };
+    color: ${props => props.theme.white };
     text-align: center;
     display: block;
     text-decoration: none;
@@ -16,12 +16,16 @@ const BotonArea = styled.a`
     border-radius: 4px;
     box-shadow: 0px 2px 4px ${props => props.theme.shadowHigher}, 0px -2px 0px ${props => props.theme.shadowHigher} inset;
     transition: all ${props => props.theme.transitionTime} ease-out;
+    font-weight: regular;
+    font-size: 1.2em;
 
     &:hover {
         /* background-color: ${props => props.theme.accent};
         color: ${props => props.theme.dark}; */
         transition: all ${props => props.theme.transitionTime} ease-in;
         box-shadow: 0px 4px 8px ${props => props.theme.shadowHigher}, 0px -2px 0px ${props => props.theme.shadowHigher} inset;
+
+        text-decoration: underline;
     }
 
     @media(min-width: 800px) {

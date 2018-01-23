@@ -7,6 +7,9 @@ import Avatar       from    './Avatar';
 
 
 /* Styled Components */
+const Enlace = styled.a`
+    text-decoration: none;
+`;
 
 const Person = styled.section`
     display: grid;
@@ -41,12 +44,13 @@ const Nombre = styled.h3`
 
     @media(min-width: 800px) {
         /* display: inline-block; */
-        font-size: 3.6em;
+        font-size: 3.4em;
     }
 `;
 const Trabajo = styled.span`
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    color: ${props => props.theme.dark};
 `;
 
 class Invitado extends React.Component {
@@ -60,13 +64,15 @@ class Invitado extends React.Component {
 
     render(){
         return (
-            <Person avatarSize={this.AvatarSize} className="person" negative={this.props.negative}>
-                <Avatar src={this.props.avatar} size={this.AvatarSize} square negative={this.props.negative} />
-                <Informacion>
-                    <Nombre>{this.props.nombre}</Nombre> 
-                    <Trabajo> {this.props.cargo} en {this.props.empresa}</Trabajo>
-                </Informacion>
-            </Person>
+            <Enlace href={this.props.link}>
+                <Person avatarSize={this.AvatarSize} className="person" negative={this.props.negative}>
+                    <Avatar src={this.props.avatar} size={this.AvatarSize} square negative={this.props.negative} />
+                    <Informacion>
+                        <Nombre>{this.props.nombre}</Nombre> 
+                        <Trabajo> {this.props.cargo} en {this.props.empresa}</Trabajo>
+                    </Informacion>
+                </Person>
+            </Enlace>
         );
     }
 
