@@ -2,7 +2,10 @@
 
 import React        from  'react';
 import styled       from  'styled-components';
-import Invitado     from    './InvitadoVert';
+import Invitado     from    './Invitado';
+import InvitadoV    from    './InvitadoVert';
+
+import JorgeAvatar from './jalv.jpg';
 
 /* Styled Components */
 const CenterWrap = styled.section`
@@ -10,6 +13,20 @@ const CenterWrap = styled.section`
     padding: 24px;
     @media(min-width: 1000px) {
         max-width: 900px;
+    }
+
+    section.person {
+        &:hover {
+            background-color: ${props => props.theme.accent};
+            transition: all ${props => props.theme.transitionTime} ease-in;
+            box-shadow: 0px 4px 10px ${props => props.theme.shadow};
+            cursor: pointer;
+
+            h3 {
+                color: ${props => props.theme.white};
+                transition: all ${props => props.theme.transitionTime} ease-in;
+            }
+        }
     }
 `
 
@@ -43,7 +60,7 @@ class Reparto extends React.Component {
             <CenterWrap>
                 <h2>El reparto</h2>
                 <p>Vendrán a darnos tema de conversación para el resto del día: </p>
-                <InvitadosVert >
+                <InvitadosHoriz >
                     <Invitado negative={this.props.negative}
                               avatar=""
                               nombre="Hugo Cornejo"
@@ -52,7 +69,7 @@ class Reparto extends React.Component {
                               link=""
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
-                              avatar=""
+                              avatar={JorgeAvatar}
                               nombre="Jorge Álvarez"
                               cargo="UX Designer"
                               empresa="Designit" 
@@ -79,6 +96,49 @@ class Reparto extends React.Component {
                               link=""
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
+                              avatar=""
+                              nombre="Raúl Álvarez"
+                              cargo="Lead UX"
+                              empresa="Cluster Seven" 
+                              link=""
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                </InvitadosHoriz>
+                <InvitadosVert >
+                    <InvitadoV negative={this.props.negative}
+                              avatar=""
+                              nombre="Hugo Cornejo"
+                              cargo="Head of Design"
+                              empresa="Monzo" 
+                              link=""
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                    <InvitadoV negative={this.props.negative}
+                              avatar={JorgeAvatar}
+                              nombre="Jorge Álvarez"
+                              cargo="UX Designer"
+                              empresa="Designit" 
+                              link=""
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                    <InvitadoV negative={this.props.negative}
+                              avatar=""
+                              nombre="Inaiyali de León"
+                              cargo="Lead Designer"
+                              link=""
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                    <InvitadoV negative={this.props.negative}
+                              avatar=""
+                              nombre="Yuan Chen"
+                              cargo="UX Designer"
+                              empresa="Farfetch" 
+                              link=""
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                   <InvitadoV negative={this.props.negative}
+                              avatar=""
+                              nombre="Sara Rivera"
+                              cargo="Head of Design"
+                              empresa="El Parking" 
+                              link=""
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                    <InvitadoV negative={this.props.negative}
                               avatar=""
                               nombre="Raúl Álvarez"
                               cargo="Lead UX"

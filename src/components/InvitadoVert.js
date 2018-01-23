@@ -12,17 +12,6 @@ const Person = styled.section`
 
     transition: all ${props => props.theme.transitionTime} ease-out;
 
-    &:hover {
-        background-color: ${props => props.theme.accent};
-        transition: all ${props => props.theme.transitionTime} ease-in;
-        box-shadow: 0px 4px 10px ${props => props.theme.shadow};
-        cursor: pointer;
-
-        h3 {
-            color: ${props => props.theme.white};
-            transition: all ${props => props.theme.transitionTime} ease-in;
-        }
-    }
 `;
 
 const Informacion = styled.section`
@@ -52,8 +41,8 @@ class Invitado extends React.Component {
 
     render(){
         return (
-            <Person negative={this.props.negative}>
-                <Avatar size={96} negative={this.props.negative} />
+            <Person className="person" negative={this.props.negative}>
+                <Avatar size={96} negative={this.props.negative} src={this.props.avatar}/>
                 <Informacion>
                     <Nombre>{this.props.nombre}</Nombre> 
                     <Trabajo> {this.props.cargo} en {this.props.empresa}</Trabajo>
