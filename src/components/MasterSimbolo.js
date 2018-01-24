@@ -6,13 +6,17 @@ import styled       from  'styled-components';
 /* Styled Components */
 
 const Estilo = styled.section`
-    margin-top: 48px;
+    margin-top: 2em;
     justify-self: center;
     #vector {
         width: ${props => props.width}px;
         path {
             fill: white;
         }
+    }
+
+    @media(min-width: 800px) {
+        margin-top: 2em;
     }
 `;
 

@@ -170,9 +170,9 @@ const Title = styled.h1`
 
 const Subt = styled.h2`
     font-size: 1em;
-    margin: 1em 0 0 0;
     text-align: center;
     @media (min-width: 800px){
+        margin: 1em 0 0 0;
         font-size: 1.4em;
     }
 `;
@@ -183,9 +183,11 @@ const Divider = styled.div`
     width: 60%;
     max-width: 120px;
     /* align-self: center; */
-    margin: 2em auto;
+    margin: 1.2em auto;
 
     @media (min-width: 800px) {
+        margin: 2em auto;
+
         /* margin: 2em 16em; */
     }
 `;
