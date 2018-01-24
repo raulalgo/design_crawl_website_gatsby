@@ -23,6 +23,7 @@ const CenterWrap = styled.section`
     }
 
     section.person {
+        transition: all ${props => props.theme.transitionTime} ease-out;
         &:hover {
             background-color: ${props => props.theme.accent};
             transition: all ${props => props.theme.transitionTime} ease-in;
