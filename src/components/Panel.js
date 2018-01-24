@@ -5,8 +5,8 @@ import styled       from  'styled-components';
 
 /* Styled Components */
 const Fondo = styled.section`
-    background-color: ${props => props.negative ? props.theme.black : props.primary ? props.theme.primary : props.theme.white};
-    color: ${props => (props.negative || props.primary) ? props.theme.white : props.theme.black };
+    background-color: ${props => props.negative ? props.theme.dark : props.primary ? props.theme.primary : props.theme.white};
+    color: ${props => (props.negative || props.primary) ? props.theme.white : props.theme.dark };
 `;
 
 const Grid = styled.section`
@@ -25,6 +25,8 @@ const Content = styled.section`
     grid-area: c;
 
     padding: 48px 0;
+
+    display: grid;
 `;
 
 class Panel extends React.Component {

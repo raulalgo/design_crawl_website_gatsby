@@ -37,15 +37,12 @@ class Main extends React.Component {
                     <Panel primary>
                         <Header primary/>
                     </Panel>
-                    <Panel>
-                        <Presentacion /> 
-                    </Panel>
                     <Panel primary>
                         <Reparto />
                     </Panel>
                     <Panel>
-                        <h2>Ya está, tampoco hay mucho más que explicar</h2>
-                        <p>Si te apetece acompañarnos, te esperamos con los brazos abiertos. Y si tienes algo que decirnos, nos puedes escribir por twitter, facebook o directamente email.</p>
+                        <h2>¿Nos quieres acompañar?</h2>
+                        <p>Andamos justos de espacio, pero alguien más seguro que cabe. Escríbenos y te contamos.</p>
                     </Panel>
                     <Panel negative>
                         <Footer />
