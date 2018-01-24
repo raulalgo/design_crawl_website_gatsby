@@ -16,7 +16,7 @@ const Estilo = styled.section`
     }
 
     @media(min-width: 800px) {
-        margin-top: 2em;
+        margin-top: 2.4em;
     }
 `;
 
