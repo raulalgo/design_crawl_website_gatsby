@@ -98,7 +98,7 @@ class Reparto extends React.Component {
                     <Invitado negative={this.props.negative}
                               avatar={YolandaAvatar}
                               nombre="Yolanda Martín"
-                              cargo="Head of Produt Design - Backoffice and Platform"
+                              cargo="Head of Produt Design"
                               empresa="Farfetch" 
                               link="https://www.linkedin.com/in/yolandamartin/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
