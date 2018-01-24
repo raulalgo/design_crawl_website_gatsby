@@ -44,7 +44,7 @@ const Nombre = styled.h3`
 
     @media(min-width: 800px) {
         /* display: inline-block; */
-        font-size: 3.4em;
+        font-size: 3.2em;
     }
 `;
 const Trabajo = styled.span`

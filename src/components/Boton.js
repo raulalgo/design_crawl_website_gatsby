@@ -20,12 +20,15 @@ const BotonArea = styled.a`
     font-size: 1.2em;
 
     &:hover {
-        /* background-color: ${props => props.theme.accent};
-        color: ${props => props.theme.dark}; */
+        color: ${props => props.theme.white };
         transition: all ${props => props.theme.transitionTime} ease-in;
         box-shadow: 0px 4px 8px ${props => props.theme.shadowHigher}, 0px -2px 0px ${props => props.theme.shadowHigher} inset;
 
         text-decoration: underline;
+    }
+
+    .whiteText {
+
     }
 
     @media(min-width: 800px) {
@@ -42,7 +45,7 @@ class Boton extends React.Component {
 
     render(){
         return (
-            <BotonArea href="mailto:info@designonscreenscom">{this.props.children}</BotonArea>
+            <BotonArea href={this.props.link}>{this.props.children}</BotonArea>
         );
     }
 

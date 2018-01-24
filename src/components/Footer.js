@@ -59,11 +59,11 @@ class Footer extends React.Component{
         <Grid>
             <section className="organiza left">
                 <h4>Organiza</h4>
-                <Centerer><img src={logoMasterPng} width="250px"/></Centerer>
+                <Centerer><a href="http://designonscreens.com/"><img src={logoMasterPng} width="250px"/></a></Centerer>
             </section> 
             <section className="patrocina right">
                 <h4>Colabora</h4>
-                <Centerer><DesignitLogo width={250}/></Centerer>
+                <Centerer><a href="https://www.designit.com/"><DesignitLogo width={250}/></a></Centerer>
             </section>
         </Grid>
     </Pie>

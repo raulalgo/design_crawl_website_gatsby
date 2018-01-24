@@ -3,7 +3,7 @@
 import React        from  'react';
 import styled       from  'styled-components';
 
-import background   from    './bg_1.jpg';
+import background   from    './img/bg_1.jpg';
 
 /* Styled Components */
 
@@ -27,7 +27,32 @@ const Foto = styled.section`
         grid-column: 1/5;
         grid-row: 1/4;
     }
+
+    display: grid;
 `
+
+const Attribution = styled.section`
+   color: ${props => props.theme.white};
+   background-color: ${props => props.theme.dark};
+   align-self: start;
+   justify-self: right;
+   padding: 12px;
+   font-size: 0.7em;
+   border-radius: 4px;
+   margin: 24px;
+
+   a {
+       color: ${props => props.theme.white};
+       font-weight: 900;
+       text-decoration: none;
+
+       &:hover {
+           text-decoration: underline;
+       }
+   }
+
+   opacity: 0.8;
+`;
 
 class Background extends React.Component {
     constructor(props) {
@@ -39,7 +64,10 @@ class Background extends React.Component {
 
         console.log('el fondo es ' + background);
         return (
-            <Foto className="background" source={background} />
+                <Foto className="background" source={background}>
+                    <Attribution>Photo by <a href="https://unsplash.com/photos/P6LeokV6u_8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Igor Ovsyannykov</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></Attribution>
+                </Foto>
+            
         );
     }
 

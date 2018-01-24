@@ -32,6 +32,21 @@ const Centrado = styled.section`
     }
 
     display: grid;
+
+    p{
+      font-weight: 300;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      a {
+        color: ${props => props.theme.dark};
+        background-color: ${props => props.theme.accent};
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }}
 `;
 
 const IndexPage = () => (
@@ -43,9 +58,9 @@ const IndexPage = () => (
     </Panel> */}
     <Reparto  />
     <Centrado>
-      <h2>¿Nos quieres acompañar?</h2>
-      <p>Andamos un poco justos de espacio, pero alguien más seguro que cabe. Escríbenos y te contamos.</p>
-      <Boton>Quiero participar</Boton>
+      <h2>¿Nos quieres acompañar?</h2> 
+      <p>Andamos un poco justos de espacio, pero alguien más seguro que cabe. Escríbenos un email a <a href="mailto:designonscreens@upsa.es">designonscreens@upsa.es</a> y te contamos.</p>
+      <Boton link="mailto:designonscreens@upsa.es">Escríbenos</Boton>
     </Centrado>
     <Panel negative>
       <Footer />

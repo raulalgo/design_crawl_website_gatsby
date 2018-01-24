@@ -24,7 +24,7 @@ const NewGrid = styled.section`
     color: ${props => props.theme.dark};
     display: grid;
     min-height: 150vh;
-    grid-template-rows: 25vh 50vh 25vh 1fr;
+    grid-template-rows: 20vh 60vh 20vh 1fr;
     grid-template-columns: 1fr 300px 1fr; 
     grid-template-areas: "mt mt mt"
                          "ml title mr"
@@ -142,6 +142,12 @@ const MarginArea = styled.section`
         align-self: center;
         max-width: 480px;
     }
+
+    a {
+        margin: 0 auto;
+        display: inline-block;
+        jsutify-self: center;
+    }
 `;
 
 const Title = styled.h1`
@@ -198,7 +204,7 @@ class Header extends React.Component {
                         <Title>the design crawl</Title>
                         <Divider />
                         <Subt>Londres, 24 de marzo de 2018</Subt>
-                        <MasterSimbolo width={50} />
+                        <a href="http://designonscreens.com/"><MasterSimbolo width={50} /></a>
                     </MarginArea>
                 </TitleWrap>
                 <TitleBg />

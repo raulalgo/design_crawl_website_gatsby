@@ -12,6 +12,7 @@ import RaulAvatar   from    './img/raula.png';
 import SaraAvatar   from    './img/sarar.png';
 import YolandaAvatar from   './img/yolandam.png';
 import YailiAvatar  from    './img/yaili.png';
+import JraAvatar    from    './img/jra.png';
 
 /* Styled Components */
 const CenterWrap = styled.section`
@@ -98,7 +99,7 @@ class Reparto extends React.Component {
                     <Invitado negative={this.props.negative}
                               avatar={YolandaAvatar}
                               nombre="Yolanda Martín"
-                              cargo="Head of Produt Design"
+                              cargo="Head of Product Design"
                               empresa="Farfetch" 
                               link="https://www.linkedin.com/in/yolandamartin/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
@@ -115,6 +116,13 @@ class Reparto extends React.Component {
                               cargo="Lead UX"
                               empresa="Cluster Seven" 
                               link="https://www.linkedin.com/in/raulalvarezgonzalez/"
+                              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
+                    <Invitado negative={this.props.negative}
+                              avatar={JraAvatar}
+                              nombre="Juan Ramón Martín"
+                              cargo="Director del Máster"
+                              empresa="la UPSA" 
+                              link="https://www.linkedin.com/in/juanramartin/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                 </InvitadosHoriz>
                 {/* <InvitadosVert >
