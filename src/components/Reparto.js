@@ -121,8 +121,8 @@ class Reparto extends React.Component {
                     <Invitado negative={this.props.negative}
                               avatar={JraAvatar}
                               nombre="Juan Ramón Martín"
-                              cargo="Director del Máster"
-                              empresa="la UPSA" 
+                              cargo="Director de 'Design On Screens'"
+                              empresa="@fcomsalamanca" 
                               link="https://www.linkedin.com/in/juanramartin/"
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                 </InvitadosHoriz>
