@@ -92,7 +92,7 @@ class Reparto extends React.Component {
                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a.Vivamus rutrum placerat elit, et tincidunt enim posuere a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec laoreet massa, eget mattis turpis. Donec at lobortis nisi. Vivamus rutrum placerat elit, et tincidunt enim posuere a." />
                     <Invitado negative={this.props.negative}
                               avatar={YailiAvatar}
-                              nombre="Inaiyali de León"
+                              nombre="Inayaili de León"
                               cargo="Product Principal"
                               empresa="Make Us Proud"
                               link="https://www.linkedin.com/in/yaili/"

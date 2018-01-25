@@ -15,7 +15,7 @@ const Grid = styled.section`
     grid-template-areas: "ml c c c c mr";
 
     @media (min-width: 800px) {
-        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+        grid-template-columns: 1fr 225px 225px 225px 225px 1fr;
         grid-template-areas: "ml c c c c mr" 
     }
 
