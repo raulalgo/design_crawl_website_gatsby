@@ -146,7 +146,7 @@ const MarginArea = styled.section`
     a {
         margin: 0 auto;
         display: inline-block;
-        jsutify-self: center;
+        justify-self: center;
     }
 `;
 
