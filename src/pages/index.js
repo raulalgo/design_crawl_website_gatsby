@@ -7,6 +7,7 @@ import Presentacion from '../components/Presentacion';
 import Reparto from '../components/Reparto';
 import Footer from '../components/Footer';
 import Boton from '../components/Boton';
+import Agenda from '../components/Agenda';
 
 const GridPresent = styled.section`
 
@@ -33,7 +34,7 @@ const Centrado = styled.section`
 
     display: grid;
 
-    p{
+    >p{
       font-weight: 300;
       font-size: 1.2em;
       line-height: 1.4em;
@@ -57,6 +58,10 @@ const IndexPage = () => (
       </GridPresent>
     </Panel> */}
     <Reparto  />
+    <Centrado>
+      <h2>Agenda</h2>
+      <Agenda />
+    </Centrado>
     <Centrado>
       <h2>¿Nos quieres acompañar?</h2> 
       <p>Andamos un poco justos de espacio, pero alguien más seguro que cabe. Escríbenos un email a <a href="mailto:designonscreens@upsa.es">designonscreens@upsa.es</a> y te contamos.</p>

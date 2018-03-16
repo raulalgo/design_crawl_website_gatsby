@@ -18,7 +18,8 @@ const reddish = '#ff4263';
 const reddish2 = '#f44848';
 const reddishDark = '#9f1f15';
 const golden = '#b18f19';
-const golden2 = '#d7b146';
+const golden2 = 'rgba(215,177,70,1)';
+const golden2RGBdim = 'rgba(215,177,70,0.2)';
 const verdeAeight = '#031e0d';
 const verdeAeightRGB100 = 'rgba(3,30,10,1)';
 const verdeAeightRGB60 = 'rgba(3,30,10,0.6)';
@@ -32,6 +33,7 @@ const theme = {
     shadow: verdeAeightRGB20,
     shadowHigher: verdeAeightRGB20,
     accent: golden2,
+    accentDim: golden2RGBdim,
     primary: blue,
     secondary: yellow,
     transitionTime: '0.1s'
